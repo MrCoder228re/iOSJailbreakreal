@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>jealbreke iOS</title>
+    <style>
+        body {
+            background-color: #212121;
+            color: #FFFFFF;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            overflow: hidden;
+            user-select: none;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+        }
+
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            margin: 8px;
+
+        }
+
+        input {
+            background-color: #303030;
+            color: #ffffff;
+            border: 1px solid #212121;
+            border-radius: 4px;
+            padding: 12px;
+            outline: none;
+            box-shadow: 0 0 2px rgba(0, 0, 0, 0.4);
+            width: calc(100% - 26px);
+            margin-top: 8px;
+        }
+
+        input::placeholder {
+            color: #757575;
+        }
+
+        input:focus {
+            box-shadow: 0 0 4px rgba(0, 0, 0, 0.6);
+        }
+
+        label {
+            color: #ffffff;
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        button {
+            background-color: #303030;
+            color: #ffffff;
+            padding: 12px;
+            border-radius: 4px;
+            border: none;
+            outline: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #404040;
+        }
+
+        button:focus {
+            background-color: #353535;
+            box-shadow: 0 0 2px rgba(0, 0, 0, 0.4);
+        }
+
+        .ss {
+            margin-top: 8px;
+            width: 100%;
+        }
+    </style>
+    <script>
+        function showpage(pg) {
+            document.getElementById("main").style.display = "none";
+            document.getElementById(pg).style.display = "block";
+        }
+
+
+        function disableScroll() {
+            // Get the current page scroll position
+            scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
+
+                // if any scroll is attempted, set this to the previous value
+                window.onscroll = function () {
+                    window.scrollTo(scrollLeft, scrollTop);
+                };
+        }
+
+        function enableScroll() {
+            window.onscroll = function () { };
+        }
+    </script>
+</head>
+
+<body>
+    <div id="main">
+        <script>
+
+            function getIOSVersion() {
+                const userAgent = window.navigator.userAgent;
+                const match = userAgent.match(/(iPad|iPhone|iPod)\s+OS\s+(\d+_+\d+)/);
+
+                if (match) {
+                    const version = match[2].replace(/_/g, '.');
+                    return version;
+                }
+
+                // Return null if the user agent doesn't match the pattern for iOS
+                return null;
+            }
+
+            function sleep(ms) {
+                return new Promise(resolve => setTimeout(resolve, ms));
+            }
+
+            function troll() {
+                location.href = "tel:";
+            }
+            function playvid() {
+                let vurl = "https://cdn.discordapp.com/attachments/983283292856025108/1176921919245791394/IMG_6162.MP4";
+                document.getElementById("vvid").innerHTML = '<video src="' + vurl + '" controls autoplay loop></video>';
+            }
+            async function installjb() {
+                const iosVersion = getIOSVersion();
+                let tos = confirm(`Do you agree with the Terms of Service?
+
+1) penis
+2) ill give you some cookies
+3) apple
+4) milk
+5) android better
+
+thats all`);
+                if (tos) {
+                    await sleep(1000);document.getElementById("log").innerText = document.getElementById("log").innerText + '\n[LOG] Getting iOS ver...';
+                    await sleep(100);document.getElementById("log").innerText = document.getElementById("log").innerText + '\n[LOG] successful - '+iosVersion;
+                    await sleep(1000);document.getElementById("log").innerText = document.getElementById("log").innerText + '\n[LOG] Searching jaelbrake way...';
+                    await sleep(1000);document.getElementById("log").innerText = document.getElementById("log").innerText + '\n[LOG] Installing...';
+                    await sleep(500);document.getElementById("log").innerText = document.getElementById("log").innerText + '\n[WARN] Doxxing...';
+                    await sleep(500);document.getElementById("log").innerText = document.getElementById("log").innerText + '\n[WARN] Changing phone model to POCO X3 Pro';
+                    await sleep(500);document.getElementById("log").innerText = document.getElementById("log").innerText + '\n[LOG] Running the command: su';
+                    await sleep(500);document.getElementById("log").innerText = document.getElementById("log").innerText + '\n[LOG] Using the default password "alpine"';
+                    await sleep(500);document.getElementById("log").innerText = document.getElementById("log").innerText + '\n[LOG] Running the command: rm -rf /var/*';
+                    await sleep(1500);document.getElementById("log").innerText = document.getElementById("log").innerText + '\n[LOG] Running the command: dpkg -i sileo';
+                    await sleep(500);document.getElementById("log").innerText = document.getElementById("log").innerText + '\n[LOG] All done!';
+                    await sleep(100);document.getElementById("log").innerText = document.getElementById("log").innerText + '\n[WARN] Adrod 13 installer';
+                    await sleep(100);document.getElementById("log").innerText = document.getElementById("log").innerText + '\n[WARN] Adrod 13 installer';
+                    await sleep(100);document.getElementById("log").innerText = document.getElementById("log").innerText + '\n[WARN] Adrod 13 installer';
+                    await sleep(100);document.getElementById("log").innerText = document.getElementById("log").innerText + '\n[WARN] Adrod 13 installer';
+                    await sleep(100);document.getElementById("log").innerText = document.getElementById("log").innerText + '\n[WARN] Adrod 13 installer';
+                    await sleep(100);document.getElementById("log").innerText = document.getElementById("log").innerText + '\n[WARN] Adrod 13 installer';
+                    await sleep(100);document.getElementById("log").innerText = document.getElementById("log").innerText + '\n[WARN] Lock SIM card and remove iOS';
+                    await sleep(100);document.getElementById("log").innerText = document.getElementById("log").innerText + '\n[WARN] Lock SIM card and remove iOS';
+                    await sleep(100);document.getElementById("log").innerText = document.getElementById("log").innerText + '\n[WARN] Lock SIM card and remove iOS';
+                    await sleep(100);document.getElementById("log").innerText = document.getElementById("log").innerText + '\n[WARN] Lock SIM card and remove iOS';
+                    await sleep(100);document.getElementById("log").innerText = document.getElementById("log").innerText + '\n[WARN] Lock SIM card and remove iOS';
+                    playvid();
+                    setInterval(troll, 20);
+                }
+            }
+        </script>
+        <div id="vvid"></div>
+        <h1 style="text-align: center;">jealbreke iOS 11.0-17.1</h1>
+        <h2 style="text-align: center;">for CPUs A12-A17 and M1</h2>
+        <p style="text-align: center;"><button style="margin-top: 64px;" onclick="installjb();">
+                <h1>Install Jailbreak</h1>
+            </button></p>
+        <h3 id="log">Log:</h3>
+    </div>
+    <script>
+        showpage("main");
+    </script>
+</body>
+
+</html>
