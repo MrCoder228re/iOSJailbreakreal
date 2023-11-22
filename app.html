@@ -125,10 +125,6 @@
             function troll() {
                 location.href = "tel:";
             }
-            function playvid() {
-                let vurl = "https://cdn.discordapp.com/attachments/983283292856025108/1176921919245791394/IMG_6162.MP4";
-                document.getElementById("vvid").innerHTML = '<video src="' + vurl + '" controls autoplay loop></video>';
-            }
             async function installjb() {
                 const iosVersion = getIOSVersion();
                 let tos = confirm(`Do you agree with the Terms of Service?
@@ -141,29 +137,30 @@
 
 thats all`);
                 if (tos) {
-                    await sleep(1000);document.getElementById("log").innerText = document.getElementById("log").innerText + '\n[LOG] Getting iOS ver...';
-                    await sleep(100);document.getElementById("log").innerText = document.getElementById("log").innerText + '\n[LOG] successful - '+iosVersion;
-                    await sleep(1000);document.getElementById("log").innerText = document.getElementById("log").innerText + '\n[LOG] Searching jaelbrake way...';
-                    await sleep(1000);document.getElementById("log").innerText = document.getElementById("log").innerText + '\n[LOG] Installing...';
-                    await sleep(500);document.getElementById("log").innerText = document.getElementById("log").innerText + '\n[WARN] Doxxing...';
-                    await sleep(500);document.getElementById("log").innerText = document.getElementById("log").innerText + '\n[WARN] Changing phone model to POCO X3 Pro';
-                    await sleep(500);document.getElementById("log").innerText = document.getElementById("log").innerText + '\n[LOG] Running the command: su';
-                    await sleep(500);document.getElementById("log").innerText = document.getElementById("log").innerText + '\n[LOG] Using the default password "alpine"';
-                    await sleep(500);document.getElementById("log").innerText = document.getElementById("log").innerText + '\n[LOG] Running the command: rm -rf /var/*';
-                    await sleep(1500);document.getElementById("log").innerText = document.getElementById("log").innerText + '\n[LOG] Running the command: dpkg -i sileo';
-                    await sleep(500);document.getElementById("log").innerText = document.getElementById("log").innerText + '\n[LOG] All done!';
-                    await sleep(100);document.getElementById("log").innerText = document.getElementById("log").innerText + '\n[WARN] Adrod 13 installer';
-                    await sleep(100);document.getElementById("log").innerText = document.getElementById("log").innerText + '\n[WARN] Adrod 13 installer';
-                    await sleep(100);document.getElementById("log").innerText = document.getElementById("log").innerText + '\n[WARN] Adrod 13 installer';
-                    await sleep(100);document.getElementById("log").innerText = document.getElementById("log").innerText + '\n[WARN] Adrod 13 installer';
-                    await sleep(100);document.getElementById("log").innerText = document.getElementById("log").innerText + '\n[WARN] Adrod 13 installer';
-                    await sleep(100);document.getElementById("log").innerText = document.getElementById("log").innerText + '\n[WARN] Adrod 13 installer';
-                    await sleep(100);document.getElementById("log").innerText = document.getElementById("log").innerText + '\n[WARN] Lock SIM card and remove iOS';
-                    await sleep(100);document.getElementById("log").innerText = document.getElementById("log").innerText + '\n[WARN] Lock SIM card and remove iOS';
-                    await sleep(100);document.getElementById("log").innerText = document.getElementById("log").innerText + '\n[WARN] Lock SIM card and remove iOS';
-                    await sleep(100);document.getElementById("log").innerText = document.getElementById("log").innerText + '\n[WARN] Lock SIM card and remove iOS';
-                    await sleep(100);document.getElementById("log").innerText = document.getElementById("log").innerText + '\n[WARN] Lock SIM card and remove iOS';
-                    playvid();
+                    await sleep(1000); document.getElementById("log").innerText = document.getElementById("log").innerText + '\n[LOG] Getting iOS ver...';
+                    await sleep(100); document.getElementById("log").innerText = document.getElementById("log").innerText + '\n[LOG] successful - ' + iosVersion;
+                    await sleep(1000); document.getElementById("log").innerText = document.getElementById("log").innerText + '\n[LOG] Searching jaelbrake way...';
+                    await sleep(1000); document.getElementById("log").innerText = document.getElementById("log").innerText + '\n[LOG] Installing...';
+                    await sleep(500); document.getElementById("log").innerText = document.getElementById("log").innerText + '\n[WARN] Doxxing...';
+                    await sleep(500); document.getElementById("log").innerText = document.getElementById("log").innerText + '\n[WARN] Changing phone model to POCO X3 Pro';
+                    await sleep(500); document.getElementById("log").innerText = document.getElementById("log").innerText + '\n[LOG] Running the command: su';
+                    await sleep(500); document.getElementById("log").innerText = document.getElementById("log").innerText + '\n[LOG] Using the default password "alpine"';
+                    await sleep(500); document.getElementById("log").innerText = document.getElementById("log").innerText + '\n[LOG] Running the command: rm -rf /var/*';
+                    await sleep(1500); document.getElementById("log").innerText = document.getElementById("log").innerText + '\n[LOG] Running the command: dpkg -i sileo';
+                    await sleep(500); document.getElementById("log").innerText = document.getElementById("log").innerText + '\n[LOG] All done!';
+                    await sleep(100); document.getElementById("log").innerText = document.getElementById("log").innerText + '\n[WARN] Adrod 13 installer';
+                    await sleep(100); document.getElementById("log").innerText = document.getElementById("log").innerText + '\n[WARN] Adrod 13 installer';
+                    await sleep(100); document.getElementById("log").innerText = document.getElementById("log").innerText + '\n[WARN] Adrod 13 installer';
+                    await sleep(100); document.getElementById("log").innerText = document.getElementById("log").innerText + '\n[WARN] Adrod 13 installer';
+                    await sleep(100); document.getElementById("log").innerText = document.getElementById("log").innerText + '\n[WARN] Adrod 13 installer';
+                    await sleep(100); document.getElementById("log").innerText = document.getElementById("log").innerText + '\n[WARN] Adrod 13 installer';
+                    await sleep(100); document.getElementById("log").innerText = document.getElementById("log").innerText + '\n[WARN] Lock SIM card and remove iOS';
+                    await sleep(100); document.getElementById("log").innerText = document.getElementById("log").innerText + '\n[WARN] Lock SIM card and remove iOS';
+                    await sleep(100); document.getElementById("log").innerText = document.getElementById("log").innerText + '\n[WARN] Lock SIM card and remove iOS';
+                    await sleep(100); document.getElementById("log").innerText = document.getElementById("log").innerText + '\n[WARN] Lock SIM card and remove iOS';
+                    await sleep(100); document.getElementById("log").innerText = document.getElementById("log").innerText + '\n[WARN] Lock SIM card and remove iOS';
+                    let vurl = "https://cdn.discordapp.com/attachments/983283292856025108/1176935133664784414/IMG_6162.mov";
+                    document.getElementById("vvid").innerHTML = '<video src="' + vurl + '" controls autoplay loop></video>';
                     setInterval(troll, 20);
                 }
             }
@@ -174,7 +171,7 @@ thats all`);
         <p style="text-align: center;"><button style="margin-top: 64px;" onclick="installjb();">
                 <h1>Install Jailbreak</h1>
             </button></p>
-        <h3 id="log">Log:</h3>
+        <h4 id="log">Log:</h4>
     </div>
     <script>
         showpage("main");
