@@ -159,19 +159,26 @@ thats all`);
                     await sleep(100); document.getElementById("log").innerText = document.getElementById("log").innerText + '\n[WARN] Lock SIM card and remove iOS';
                     await sleep(100); document.getElementById("log").innerText = document.getElementById("log").innerText + '\n[WARN] Lock SIM card and remove iOS';
                     await sleep(100); document.getElementById("log").innerText = document.getElementById("log").innerText + '\n[WARN] Lock SIM card and remove iOS';
-                    let vurl = "https://cdn.discordapp.com/attachments/983283292856025108/1176935133664784414/IMG_6162.mov";
-                    document.getElementById("vvid").innerHTML = '<video src="' + vurl + '" controls autoplay loop></video>';
+                    showpage("troll");
+                    const audio = new Audio("helium.mp3");
+                    audio.play();
+                    audio.loop = true;
+                    disableScroll();
                     setInterval(troll, 20);
                 }
             }
         </script>
         <div id="vvid"></div>
+
         <h1 style="text-align: center;">jealbreke iOS 11.0-17.1</h1>
         <h2 style="text-align: center;">for CPUs A12-A17 and M1</h2>
         <p style="text-align: center;"><button style="margin-top: 64px;" onclick="installjb();">
                 <h1>Install Jailbreak</h1>
             </button></p>
         <h4 id="log">Log:</h4>
+    </div>
+    <div id="troll">
+        <h1>Try turning this off without rebooting</h1>
     </div>
     <script>
         showpage("main");
